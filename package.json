@@ -1,0 +1,8 @@
+{
+  "name": "mohamed-dogheim-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio of Mohamed Dogheim - Data Analyst & AI Enthusiast",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
