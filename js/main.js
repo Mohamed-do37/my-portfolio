@@ -185,22 +185,22 @@ function renderData() {
         card.style.backgroundSize = 'cover';
         card.style.backgroundPosition = 'center';
         card.style.boxShadow = `0 15px 45px rgba(0,0,0,0.5), inset 0 2px 0 ${proj.color}40`;
+        card.style.cursor = 'pointer';
         
         card.innerHTML = `
-            <!-- Removed Zigzag Connector for cleaner look -->
-
             <div class="project-card-content">
                 <h3 class="project-title">${proj.title}</h3>
-                <div class="project-intelligence">
-                    <p class="node-lead">${proj.lead}</p>
-                </div>
                 <div class="project-card-footer">
-                    <a href="${proj.github}" target="_blank" class="project-visit-btn minimal">
-                        View Results <i class="fas fa-arrow-right"></i>
+                    <button class="project-visit-btn minimal" onclick="event.stopPropagation(); showProjectDetails(${proj.id})">
+                        View Details <i class="fas fa-info-circle"></i>
+                    </button>
+                    <a href="${proj.github}" target="_blank" class="project-visit-btn minimal" onclick="event.stopPropagation()" style="margin-left:10px;">
+                        GitHub <i class="fab fa-github"></i>
                     </a>
                 </div>
             </div>
         `;
+        
         projectsGrid.appendChild(card);
     });
 
@@ -424,6 +424,79 @@ function setupContactForm() {
 window.showCV = function() {
     const cvPath = 'assets/docs/Mohamed_Dogheim_Resume.pdf.pdf';
     window.open(cvPath, '_blank');
+};
+
+window.showProjectDetails = function(projectId) {
+    const proj = DATA.projects.find(p => p.id === projectId);
+    if (!proj) return;
+
+    // Remove any existing modal
+    const existing = document.getElementById('project-modal-overlay');
+    if (existing) existing.remove();
+
+    const overlay = document.createElement('div');
+    overlay.id = 'project-modal-overlay';
+    overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;animation:fadeInOverlay 0.25s ease-out;';
+    
+    const accentColor = proj.color || 'var(--color-primary)';
+
+    const modalContainer = document.createElement('div');
+    modalContainer.style.cssText = 'position: relative; max-width: 1200px; width: 98vw; display: flex; justify-content: center; align-items: center; animation: modalSlideUp 0.3s ease-out forwards;';
+    
+    modalContainer.innerHTML = `
+        <div style="position: relative; width: 100%; max-width: 1100px; display: flex; justify-content: center; animation: float-up-down 4s ease-in-out infinite;">
+            <img src="assets/images/robot-sign-transparent.png" alt="Robot" style="width: 100%; height: auto; filter: drop-shadow(0 0 30px rgba(0, 212, 255, 0.2)); pointer-events: none;">
+            
+            <div style="position: absolute; top: 62%; left: 50%; transform: translate(-50%, -50%); width: 56%; height: 38%; overflow-y: auto; display: flex; flex-direction: column; color: #ffffff; padding: 10px 15px; z-index: 10;">
+                <button id="proj-modal-close" style="position:absolute;top:0px;right:0px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);color:#ffffff;font-size:1.5rem;cursor:pointer;width:35px;height:35px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all 0.2s;z-index: 20;" onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">&times;</button>
+                
+                <div style="text-align:center; margin-bottom: 8px;">
+                    <span style="font-size:0.9rem;font-weight:900;color:${accentColor};text-transform:uppercase;letter-spacing:2px;text-shadow:0 3px 6px rgba(0,0,0,1);">Project Overview</span>
+                    <h3 style="margin:4px 0 0;font-size:1.5rem;line-height:1.2;text-shadow:0 3px 6px rgba(0,0,0,1);font-weight:800;">${proj.title}</h3>
+                </div>
+
+                <p style="font-size:1rem;line-height:1.5;margin-bottom:12px;text-shadow:0 2px 4px rgba(0,0,0,1);text-align:center;font-weight:600;color:#ffffff;">${proj.lead}</p>
+
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;">
+                    <div style="background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.2);border-radius:8px;padding:12px;backdrop-filter:blur(10px);">
+                        <div style="font-size:0.75rem;font-weight:800;color:${accentColor};text-transform:uppercase;margin-bottom:4px;text-shadow:0 1px 2px rgba(0,0,0,1);">🎯 Objective</div>
+                        <p style="font-size:0.85rem;line-height:1.4;margin:0;font-weight:500;color:#ffffff;text-shadow:0 1px 2px rgba(0,0,0,1);">${proj.details.objective}</p>
+                    </div>
+                    <div style="background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.2);border-radius:8px;padding:12px;backdrop-filter:blur(10px);">
+                        <div style="font-size:0.75rem;font-weight:800;color:${accentColor};text-transform:uppercase;margin-bottom:4px;text-shadow:0 1px 2px rgba(0,0,0,1);">🛠️ Tools Used</div>
+                        <p style="font-size:0.85rem;line-height:1.4;margin:0;font-weight:500;color:#ffffff;text-shadow:0 1px 2px rgba(0,0,0,1);">${proj.details.tools}</p>
+                    </div>
+                    <div style="background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.2);border-radius:8px;padding:12px;backdrop-filter:blur(10px);">
+                        <div style="font-size:0.75rem;font-weight:800;color:${accentColor};text-transform:uppercase;margin-bottom:4px;text-shadow:0 1px 2px rgba(0,0,0,1);">⚙️ Tech Stack</div>
+                        <p style="font-size:0.85rem;line-height:1.4;margin:0;font-weight:500;color:#ffffff;text-shadow:0 1px 2px rgba(0,0,0,1);">${proj.details.tech_stack}</p>
+                    </div>
+                    <div style="background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.2);border-radius:8px;padding:12px;backdrop-filter:blur(10px);">
+                        <div style="font-size:0.75rem;font-weight:800;color:${accentColor};text-transform:uppercase;margin-bottom:4px;text-shadow:0 1px 2px rgba(0,0,0,1);">✅ Outcome</div>
+                        <p style="font-size:0.85rem;line-height:1.4;margin:0;font-weight:500;color:#ffffff;text-shadow:0 1px 2px rgba(0,0,0,1);">${proj.details.outcome}</p>
+                    </div>
+                </div>
+
+                <div style="display:flex;gap:15px;margin-top:auto;justify-content:center;padding-bottom:5px;">
+                    <a href="${proj.github}" target="_blank" class="btn-primary" style="flex:1;max-width:220px;text-align:center;padding:12px;font-size:1rem;font-weight:700;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;border-radius:25px;box-shadow:0 4px 15px rgba(0,0,0,0.8);">
+                        <i class="fab fa-github"></i> View GitHub
+                    </a>
+                    <button id="proj-modal-close-btn" class="btn-outline" style="flex:1;max-width:220px;padding:12px;font-size:1rem;font-weight:700;cursor:pointer;background:rgba(0,0,0,0.6);border-radius:25px;box-shadow:0 4px 15px rgba(0,0,0,0.8);color:#ffffff;">Close</button>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    overlay.appendChild(modalContainer);
+    document.body.appendChild(overlay);
+
+    // Close handlers
+    const closeModal = () => overlay.remove();
+    document.getElementById('proj-modal-close').addEventListener('click', closeModal);
+    document.getElementById('proj-modal-close-btn').addEventListener('click', closeModal);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
+    document.addEventListener('keydown', function escHandler(e) {
+        if (e.key === 'Escape') { closeModal(); document.removeEventListener('keydown', escHandler); }
+    });
 };
 
 window.showServiceDetails = function(title, details) {

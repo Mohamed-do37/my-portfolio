@@ -77,6 +77,62 @@ const DATA = {
             },
             github: "https://github.com/Mohamed-do37/Logistics-Supply-Chain-Analytics",
             color: "#00d4ff"
+        },
+        {
+            id: 4,
+            title: "Sales-Data-Analysis-Project",
+            image: "assets/images/proj-sales-excel.png",
+            lead: "Data-Driven Sales Intelligence: Transformed raw sales data into clear KPIs and actionable business insights using Excel.",
+            details: {
+                objective: "Analyze sales data and generate meaningful insights for better decision-making.",
+                tools: "Microsoft Excel, Pivot Tables, Data Visualization.",
+                tech_stack: "Dynamic Slicers, KPI Charts, Data Cleaning Techniques.",
+                outcome: "Interactive dashboard highlighting performance trends and key business patterns."
+            },
+            github: "https://github.com/Mohamed-do37/Sales-Data-Analysis-Project",
+            color: "#10b981"
+        },
+        {
+            id: 5,
+            title: "Interactive-Business-Dashboard-Excel",
+            image: "assets/images/proj-interactive-excel.png",
+            lead: "Executive-Grade Excel Reporting: Built a fully interactive business dashboard with dynamic filtering and professional KPI tracking.",
+            details: {
+                objective: "Transform raw business data into actionable insights through an interactive Excel dashboard.",
+                tools: "Microsoft Excel, Pivot Tables, Slicers.",
+                tech_stack: "Data Visualization, Dynamic Filtering, KPI Design.",
+                outcome: "Professional dashboard enabling quick insights and data-driven decisions."
+            },
+            github: "https://github.com/Mohamed-do37/Interactive-Business-Dashboard-Excel-",
+            color: "#f59e0b"
+        },
+        {
+            id: 6,
+            title: "Sales-Performance-Dashboard-Power-BI",
+            image: "assets/images/proj-sales-powerbi.png",
+            lead: "Real-Time Sales Intelligence: Engineered an interactive Power BI dashboard that identifies top performers and reveals hidden revenue trends.",
+            details: {
+                objective: "Analyze business performance and extract actionable insights through interactive Power BI visualizations.",
+                tools: "Power BI Desktop, DAX, Data Transformation.",
+                tech_stack: "Interactive Slicers, KPI Tracking, Trend Analysis, Data Storytelling.",
+                outcome: "Identified top-performing categories and provided clear business insights for better executive decisions."
+            },
+            github: "https://github.com/Mohamed-do37/Sales-Performance-Dashboard-Power-BI",
+            color: "#7c3aed"
+        },
+        {
+            id: 7,
+            title: "Advanced-Business-Analysis-Dashboard-Power-BI",
+            image: "assets/images/proj-advanced-powerbi.png",
+            lead: "Strategic Business Intelligence: Delivered an advanced Power BI dashboard that uncovers performance patterns and drives data-driven strategies.",
+            details: {
+                objective: "Explore business patterns, track performance, and support data-driven decisions through advanced visualizations.",
+                tools: "Power BI Desktop, DAX, Data Cleaning & Transformation.",
+                tech_stack: "Advanced Interactive Dashboard, Dynamic Filtering, KPI Monitoring.",
+                outcome: "Highlighted key strengths and weaknesses with actionable insights for organizational decision-making."
+            },
+            github: "https://github.com/Mohamed-do37/Advanced-Business-Analysis-Dashboard-Power-BI",
+            color: "#ec4899"
         }
     ],
 
