@@ -1,227 +1,123 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
-<title id="title">AI Data Intelligence — Animated Profile Cover</title>
-<desc id="desc">A cinematic holographic AI core connects neural nodes, flowing data particles, a live analytics dashboard, and a pulsing signal ring in a deep navy and cyan scene.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="680" viewBox="0 0 1600 680" role="img" aria-labelledby="title desc">
+<title id="title">Mohamed Dogheim — Future AI and Data Intelligence</title>
+<desc id="desc">Large cinematic holographic artificial intelligence core, with rotating luminous orbital rings, pulsing energy waves, neural connections, moving data particles, and a futuristic analytics interface in a deep navy cyan identity.</desc>
 <defs>
-  <linearGradient id="space" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#030712"/><stop offset=".48" stop-color="#07172D"/><stop offset="1" stop-color="#04111F"/></linearGradient>
-  <radialGradient id="nebula"><stop stop-color="#087EA4" stop-opacity=".34"/><stop offset=".42" stop-color="#123D8A" stop-opacity=".13"/><stop offset="1" stop-color="#020617" stop-opacity="0"/></radialGradient>
-  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A5F3FC"/><stop offset=".45" stop-color="#22D3EE"/><stop offset="1" stop-color="#3B82F6"/></linearGradient>
-  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B2943" stop-opacity=".93"/><stop offset="1" stop-color="#071426" stop-opacity=".72"/></linearGradient>
-  <linearGradient id="beam"><stop stop-color="#22D3EE" stop-opacity="0"/><stop offset=".5" stop-color="#67E8F9" stop-opacity=".95"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></linearGradient>
-  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
-  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#164164" stroke-width=".8" opacity=".42"/></pattern>
-  <pattern id="microgrid" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M8 0H0V8" fill="none" stroke="#1B4867" stroke-width=".5" opacity=".22"/></pattern>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#020611"/><stop offset=".5" stop-color="#07172D"/><stop offset="1" stop-color="#020917"/></linearGradient>
+ <radialGradient id="atmos"><stop stop-color="#087EA4" stop-opacity=".32"/><stop offset=".46" stop-color="#164E9A" stop-opacity=".13"/><stop offset="1" stop-color="#020611" stop-opacity="0"/></radialGradient>
+ <radialGradient id="core"><stop stop-color="#CFFAFE"/><stop offset=".16" stop-color="#67E8F9"/><stop offset=".42" stop-color="#0891B2"/><stop offset=".72" stop-color="#164E91"/><stop offset="1" stop-color="#071426"/></radialGradient>
+ <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D9FBFF"/><stop offset=".32" stop-color="#67E8F9"/><stop offset=".7" stop-color="#22D3EE"/><stop offset="1" stop-color="#6366F1"/></linearGradient>
+ <linearGradient id="beam"><stop stop-color="#22D3EE" stop-opacity="0"/><stop offset=".5" stop-color="#A5F3FC"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></linearGradient>
+ <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B2943" stop-opacity=".94"/><stop offset="1" stop-color="#071426" stop-opacity=".82"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="bloom"><feGaussianBlur stdDeviation="22"/></filter>
+ <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1B4665" stroke-width=".8" opacity=".42"/></pattern>
+ <pattern id="fine" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M8 0H0V8" fill="none" stroke="#1B4665" stroke-width=".5" opacity=".23"/></pattern>
 </defs>
-
-<!-- Cinematic background -->
-<rect width="1600" height="520" rx="28" fill="url(#space)"/>
-<rect width="1600" height="520" rx="28" fill="url(#grid)"/>
-<rect width="1600" height="520" rx="28" fill="url(#microgrid)" opacity=".5"/>
-<ellipse cx="840" cy="260" rx="560" ry="310" fill="url(#nebula)"/>
-<ellipse cx="1180" cy="270" rx="270" ry="210" fill="#0369A1" opacity=".07" filter="url(#soft)"><animate attributeName="opacity" values=".04;.12;.04" dur="8s" repeatCount="indefinite"/></ellipse>
-
-<!-- Star/data field -->
-<g fill="#67E8F9">
-  <circle cx="90" cy="72" r="1.5" opacity=".8"/><circle cx="250" cy="420" r="1.2" opacity=".7"/>
-  <circle cx="400" cy="82" r="1.1" opacity=".8"/><circle cx="710" cy="65" r="1.5" opacity=".65"/>
-  <circle cx="1040" cy="55" r="1.1" opacity=".6"/><circle cx="1450" cy="90" r="1.5" opacity=".8"/>
-  <circle cx="1510" cy="370" r="1.2" opacity=".8"/><circle cx="1300" cy="450" r="1.2" opacity=".6"/>
-  <circle cx="620" cy="450" r="1.3" opacity=".6"/><circle cx="170" cy="270" r="1.1" opacity=".8"/>
-  <circle cx="1360" cy="165" r="1.4" opacity=".8"/><circle cx="470" cy="475" r="1" opacity=".7"/>
+<!-- immersive deep-space canvas -->
+<rect width="1600" height="680" rx="28" fill="url(#bg)"/>
+<rect width="1600" height="680" rx="28" fill="url(#grid)"/>
+<rect width="1600" height="680" rx="28" fill="url(#fine)"/>
+<ellipse cx="820" cy="335" rx="620" ry="410" fill="url(#atmos)"/>
+<ellipse cx="820" cy="335" rx="240" ry="240" fill="#0891B2" opacity=".12" filter="url(#bloom)"><animate attributeName="opacity" values=".06;.2;.06" dur="5s" repeatCount="indefinite"/></ellipse>
+<!-- starfield -->
+<g fill="#A5F3FC">
+ <circle cx="55" cy="92" r="1.7"/><circle cx="270" cy="70" r="1.2"/><circle cx="500" cy="105" r="1.4"/><circle cx="630" cy="52" r="1.1"/><circle cx="1000" cy="60" r="1.4"/><circle cx="1140" cy="84" r="1.1"/><circle cx="1510" cy="80" r="1.6"/><circle cx="1540" cy="575" r="1.2"/><circle cx="1080" cy="615" r="1.5"/><circle cx="470" cy="590" r="1.4"/><circle cx="160" cy="510" r="1.1"/><circle cx="60" cy="335" r="1.4"/>
+ <circle cx="330" cy="490" r="1.2"><animate attributeName="opacity" values=".2;1;.2" dur="2s" repeatCount="indefinite"/></circle>
+ <circle cx="1040" cy="180" r="1.8"><animate attributeName="opacity" values="1;.2;1" dur="2.6s" repeatCount="indefinite"/></circle>
+ <circle cx="1440" cy="280" r="1.6"><animate attributeName="opacity" values=".15;1;.15" dur="3.1s" repeatCount="indefinite"/></circle>
 </g>
-<g stroke="#38BDF8" stroke-width="1" opacity=".15" fill="none">
-  <path d="M35 125H180L215 160H330"/><path d="M1260 55H1370L1400 85H1550"/>
-  <path d="M30 380H125L155 350H235"/><path d="M1360 440H1450L1480 410H1560"/>
-</g>
-
-<!-- Left identity block: clean negative space for name in README above/below -->
+<!-- identity panel -->
 <g font-family="Inter,Segoe UI,Arial,sans-serif">
-  <text x="76" y="100" fill="#67E8F9" font-size="13" letter-spacing="5">INTELLIGENCE SYSTEM / 001</text>
-  <path d="M76 121H330" stroke="url(#cyan)" stroke-width="2" stroke-linecap="round">
-    <animate attributeName="stroke-dasharray" values="0 254;254 0;0 254" dur="7s" repeatCount="indefinite"/>
-  </path>
-  <text x="74" y="180" fill="#F0FAFF" font-size="42" font-weight="750" letter-spacing="1.5">AI × DATA</text>
-  <text x="74" y="226" fill="#F0FAFF" font-size="42" font-weight="750" letter-spacing="1.5">INTELLIGENCE</text>
-  <text x="77" y="260" fill="#93B9D2" font-size="14" letter-spacing="2.7">ANALYZE  /  DISCOVER  /  BUILD</text>
-  <g transform="translate(77 294)">
-    <rect width="130" height="30" rx="15" fill="#0A233A" stroke="#155E75"/>
-    <circle cx="15" cy="15" r="3.5" fill="#67E8F9" filter="url(#glow)"><animate attributeName="opacity" values=".4;1;.4" dur="1.5s" repeatCount="indefinite"/></circle>
-    <text x="28" y="19" fill="#C8F7FF" font-size="10" letter-spacing="1.3">MACHINE LEARNING</text>
-    <rect x="140" width="104" height="30" rx="15" fill="#0A233A" stroke="#1D4ED8"/>
-    <text x="192" y="19" text-anchor="middle" fill="#C8F7FF" font-size="10" letter-spacing="1.1">DATA SCIENCE</text>
-  </g>
-  <text x="78" y="462" fill="#4F7897" font-size="11" letter-spacing="2.2">FROM RAW SIGNALS TO REAL INSIGHTS</text>
+ <text x="72" y="112" fill="#67E8F9" font-size="13" letter-spacing="4.5">MOHAMED DOGHEIM / DIGITAL IDENTITY</text>
+ <path d="M72 133H390" stroke="url(#neon)" stroke-width="2" stroke-linecap="round" stroke-dasharray="318"><animate attributeName="stroke-dashoffset" values="318;0;318" dur="8s" repeatCount="indefinite"/></path>
+ <text x="70" y="218" fill="#F0FAFF" font-size="50" font-weight="750" letter-spacing="1">AI × DATA</text>
+ <text x="70" y="273" fill="#F0FAFF" font-size="43" font-weight="750" letter-spacing=".5">INTELLIGENCE</text>
+ <text x="74" y="312" fill="#8CB9D4" font-size="13" letter-spacing="2.5">ANALYZE  /  DISCOVER  /  BUILD</text>
+ <g transform="translate(73 350)">
+  <rect width="154" height="34" rx="17" fill="#071C30" stroke="#0E7490"/><circle cx="17" cy="17" r="4" fill="#67E8F9" filter="url(#glow)"><animate attributeName="r" values="2.5;5;2.5" dur="1.8s" repeatCount="indefinite"/></circle><text x="31" y="21" fill="#CFFAFE" font-size="10" letter-spacing="1.1">MACHINE LEARNING</text>
+  <rect x="164" width="119" height="34" rx="17" fill="#071C30" stroke="#3730A3"/><text x="223" y="21" fill="#CFFAFE" font-size="10" text-anchor="middle" letter-spacing="1">DATA SCIENCE</text>
+ </g>
+ <text x="74" y="592" fill="#5C85A3" font-size="11" letter-spacing="2.2">FROM RAW SIGNALS TO REAL INSIGHTS</text>
+ <path d="M74 615H365" stroke="#164E63" stroke-width="1"/>
+ <text x="74" y="640" fill="#47708E" font-size="10" letter-spacing="2">FUTURE-FOCUSED • PROJECT-DRIVEN</text>
 </g>
-
-<!-- Central holographic AI reactor -->
-<g transform="translate(805 258)">
-  <circle r="162" fill="#0284C7" opacity=".06" filter="url(#soft)"/>
-  <circle r="144" fill="none" stroke="#164E73" stroke-width="1" stroke-dasharray="2 8">
-    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="80s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="127" fill="none" stroke="#0E7490" stroke-width="1.3" stroke-dasharray="54 12 4 12" opacity=".75">
-    <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="34s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="108" fill="none" stroke="#38BDF8" stroke-opacity=".35" stroke-width="1.2" stroke-dasharray="3 7">
-    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
-  </circle>
-  <ellipse rx="86" ry="34" fill="none" stroke="#67E8F9" stroke-width="1.2" stroke-opacity=".8" transform="rotate(-28)">
-    <animateTransform attributeName="transform" type="rotate" from="-28" to="332" dur="18s" repeatCount="indefinite" additive="sum"/>
-  </ellipse>
-  <ellipse rx="86" ry="34" fill="none" stroke="#3B82F6" stroke-width="1.2" stroke-opacity=".7" transform="rotate(52)">
-    <animateTransform attributeName="transform" type="rotate" from="52" to="412" dur="22s" repeatCount="indefinite" additive="sum"/>
-  </ellipse>
-  <circle r="70" fill="#0284C7" opacity=".12"><animate attributeName="r" values="64;76;64" dur="4s" repeatCount="indefinite"/></circle>
-  <circle r="58" fill="url(#glass)" stroke="#38BDF8" stroke-width="1.5" filter="url(#glow)"/>
-  <circle r="46" fill="none" stroke="#67E8F9" stroke-opacity=".28" stroke-dasharray="2 5">
-    <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="15s" repeatCount="indefinite"/>
-  </circle>
-  <g fill="none" stroke="#67E8F9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
-    <path d="M-24 -22L0 -35L24 -22L24 6L0 21L-24 6Z" opacity=".9"/>
-    <path d="M-24 -22L0 -7L24 -22M0 -7V21M-24 6L0 -7L24 6"/>
-  </g>
-  <circle r="5" fill="#E0FCFF" filter="url(#glow)"><animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/></circle>
-  <g fill="#A5F3FC" filter="url(#glow)">
-    <circle cx="0" cy="-128" r="3"><animate attributeName="opacity" values=".25;1;.25" dur="2s" repeatCount="indefinite"/></circle>
-    <circle cx="111" cy="64" r="3"><animate attributeName="opacity" values="1;.25;1" dur="2.5s" repeatCount="indefinite"/></circle>
-    <circle cx="-111" cy="64" r="3"><animate attributeName="opacity" values=".25;1;.25" dur="3s" repeatCount="indefinite"/></circle>
-  </g>
+<!-- central giant holographic reactor: hero focal point -->
+<g transform="translate(815 340)">
+ <circle r="240" fill="#0891B2" opacity=".08" filter="url(#bloom)"/>
+ <circle r="218" fill="none" stroke="#164E73" stroke-width="1.2" stroke-dasharray="2 11" opacity=".9"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="95s" repeatCount="indefinite"/></circle>
+ <circle r="202" fill="none" stroke="#0E7490" stroke-width="1.4" stroke-dasharray="68 13 4 14" opacity=".9"><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="34s" repeatCount="indefinite"/></circle>
+ <circle r="182" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="3 8" opacity=".75"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="21s" repeatCount="indefinite"/></circle>
+ <ellipse rx="174" ry="70" fill="none" stroke="#67E8F9" stroke-width="1.6" stroke-opacity=".85" transform="rotate(-35)"><animateTransform attributeName="transform" type="rotate" from="-35" to="325" dur="17s" repeatCount="indefinite" additive="sum"/></ellipse>
+ <ellipse rx="174" ry="70" fill="none" stroke="#3B82F6" stroke-width="1.5" stroke-opacity=".78" transform="rotate(54)"><animateTransform attributeName="transform" type="rotate" from="54" to="414" dur="23s" repeatCount="indefinite" additive="sum"/></ellipse>
+ <ellipse rx="205" ry="92" fill="none" stroke="#22D3EE" stroke-opacity=".38" stroke-width="1.1" transform="rotate(72)"><animateTransform attributeName="transform" type="rotate" from="72" to="432" dur="31s" repeatCount="indefinite" additive="sum"/></ellipse>
+ <circle r="142" fill="#0E7490" opacity=".12"><animate attributeName="r" values="132;151;132" dur="4.6s" repeatCount="indefinite"/></circle>
+ <circle r="119" fill="none" stroke="#67E8F9" stroke-width="1.2" stroke-opacity=".45" stroke-dasharray="2 7"><animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="12s" repeatCount="indefinite"/></circle>
+ <!-- energy pulse waves -->
+ <circle r="126" fill="none" stroke="#22D3EE" stroke-width="2.2"><animate attributeName="r" values="122;222;122" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0;.7" dur="7s" repeatCount="indefinite"/></circle>
+ <circle r="138" fill="none" stroke="#60A5FA" stroke-width="1.6"><animate attributeName="r" values="138;236;138" dur="8.5s" begin="-3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;0;.5" dur="8.5s" begin="-3s" repeatCount="indefinite"/></circle>
+ <!-- central energy sphere -->
+ <circle r="104" fill="url(#core)" opacity=".95" filter="url(#glow)"><animate attributeName="opacity" values=".78;1;.78" dur="3.4s" repeatCount="indefinite"/></circle>
+ <circle r="91" fill="#06172A" stroke="#A5F3FC" stroke-opacity=".8" stroke-width="1.6"/>
+ <circle r="80" fill="none" stroke="#38BDF8" stroke-opacity=".62" stroke-width="1.3" stroke-dasharray="5 5"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="16s" repeatCount="indefinite"/></circle>
+ <!-- neural lattice inside the core -->
+ <g stroke="#67E8F9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#glow)">
+  <path d="M-42 -27L-20 -48L9 -39L38 -18L35 17L8 40L-24 32L-43 7Z"/>
+  <path d="M-42 -27L-9 -12L-20 -48M-9 -12L9 -39M-9 -12L35 17M-9 -12L-24 32M-9 -12L38 -18M-43 7L-9 -12L8 40M-24 32L35 17"/>
+ </g>
+ <g fill="#E0FCFF" filter="url(#glow)">
+  <circle cx="-42" cy="-27" r="4"><animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/></circle>
+  <circle cx="-20" cy="-48" r="3.5"/><circle cx="9" cy="-39" r="4"><animate attributeName="opacity" values=".25;1;.25" dur="2.3s" repeatCount="indefinite"/></circle>
+  <circle cx="38" cy="-18" r="3.5"/><circle cx="35" cy="17" r="4"/><circle cx="8" cy="40" r="3.5"><animate attributeName="r" values="2.5;4.5;2.5" dur="1.7s" repeatCount="indefinite"/></circle>
+  <circle cx="-24" cy="32" r="4"/><circle cx="-43" cy="7" r="3.5"/><circle cx="-9" cy="-12" r="6"/>
+ </g>
+ <circle r="11" fill="#E0FCFF" opacity=".75" filter="url(#glow)"><animate attributeName="r" values="6;13;6" dur="2.6s" repeatCount="indefinite"/></circle>
+ <!-- orbiting energy particles -->
+ <g filter="url(#glow)">
+  <circle r="5" fill="#E0FCFF"><animateMotion dur="8s" repeatCount="indefinite" path="M-174 0 A174 70 -35 1 1 174 0 A174 70 -35 1 1 -174 0"/></circle>
+  <circle r="4" fill="#38BDF8"><animateMotion dur="10s" begin="-3s" repeatCount="indefinite" path="M0 -174 A70 174 0 1 1 0 174 A70 174 0 1 1 0 -174"/></circle>
+  <circle r="3.5" fill="#A5F3FC"><animateMotion dur="6s" begin="-1.5s" repeatCount="indefinite" path="M-205 0 A205 92 72 1 1 205 0 A205 92 72 1 1 -205 0"/></circle>
+  <circle r="3" fill="#818CF8"><animateMotion dur="9s" begin="-4s" repeatCount="indefinite" path="M-202 0 A202 202 0 1 1 202 0 A202 202 0 1 1 -202 0"/></circle>
+ </g>
 </g>
-
-<!-- Neural paths connect the core to data and analytics panels -->
-<g fill="none" stroke="#22D3EE" stroke-width="1.25" stroke-opacity=".48">
-  <path d="M918 215C976 176 986 150 1035 150L1090 150"/>
-  <path d="M920 296C984 324 1010 365 1070 365L1122 365"/>
-  <path d="M695 235C650 203 630 182 586 182L548 182"/>
-  <path d="M696 298C648 337 635 380 590 380L540 380"/>
-</g>
-<g fill="#67E8F9" filter="url(#glow)">
-  <circle r="3" cx="918" cy="215"><animate attributeName="opacity" values=".2;1;.2" dur="1.7s" repeatCount="indefinite"/></circle>
-  <circle r="3" cx="920" cy="296"><animate attributeName="opacity" values="1;.2;1" dur="2.1s" repeatCount="indefinite"/></circle>
-  <circle r="2.5" cx="695" cy="235"><animate attributeName="opacity" values=".2;1;.2" dur="2.4s" repeatCount="indefinite"/></circle>
-  <circle r="2.5" cx="696" cy="298"><animate attributeName="opacity" values="1;.2;1" dur="1.9s" repeatCount="indefinite"/></circle>
-</g>
-
-<!-- Right-side live analytics glass panel -->
-<g transform="translate(1085 112)">
-  <rect width="440" height="280" rx="18" fill="url(#glass)" stroke="#155E75" stroke-width="1.3"/>
-  <rect x="1" y="1" width="438" height="278" rx="17" fill="url(#microgrid)" opacity=".8"/>
-  <g font-family="Inter,Segoe UI,Arial,sans-serif">
-    <text x="22" y="29" fill="#A5F3FC" font-size="10" letter-spacing="2.4">LIVE ANALYTICS / SIGNAL MAP</text>
-    <circle cx="407" cy="24" r="3.5" fill="#67E8F9"><animate attributeName="opacity" values=".3;1;.3" dur="1.4s" repeatCount="indefinite"/></circle>
-  </g>
-  <g stroke="#1E4966" stroke-width="1">
-    <path d="M22 72H418M22 112H418M22 152H418M22 192H418M22 232H418"/>
-    <path d="M62 53V244M112 53V244M162 53V244M212 53V244M262 53V244M312 53V244M362 53V244"/>
-  </g>
-  <path d="M23 204L62 181L101 190L140 145L179 162L218 118L257 137L296 91L335 108L375 67L416 81L416 244L23 244Z" fill="#0891B2" opacity=".10"/>
-  <path d="M23 204L62 181L101 190L140 145L179 162L218 118L257 137L296 91L335 108L375 67L416 81" fill="none" stroke="#67E8F9" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" filter="url(#glow)" stroke-dasharray="560" stroke-dashoffset="560">
-    <animate attributeName="stroke-dashoffset" from="560" to="0" dur="4s" repeatCount="indefinite"/>
-  </path>
-  <circle cx="296" cy="91" r="5" fill="#A5F3FC" stroke="#22D3EE" stroke-width="2"><animate attributeName="r" values="3;7;3" dur="2s" repeatCount="indefinite"/></circle>
-  <g fill="#0E7490" stroke="#38BDF8" stroke-width=".7">
-    <rect x="33" y="253" width="14" height="12" rx="2"><animate attributeName="height" values="12;20;12" dur="3s" repeatCount="indefinite"/><animate attributeName="y" values="253;245;253" dur="3s" repeatCount="indefinite"/></rect>
-    <rect x="57" y="247" width="14" height="18" rx="2"><animate attributeName="height" values="18;10;18" dur="2.5s" repeatCount="indefinite"/><animate attributeName="y" values="247;255;247" dur="2.5s" repeatCount="indefinite"/></rect>
-    <rect x="81" y="239" width="14" height="26" rx="2"/>
-    <rect x="105" y="231" width="14" height="34" rx="2"><animate attributeName="height" values="34;24;34" dur="3.5s" repeatCount="indefinite"/><animate attributeName="y" values="231;241;231" dur="3.5s" repeatCount="indefinite"/></rect>
-    <rect x="129" y="224" width="14" height="41" rx="2"/>
-  </g>
-  <text x="170" y="262" fill="#7FA7C2" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="9" letter-spacing="1.5">PATTERN DETECTED</text>
-  <path d="M340 254L352 242L364 248L382 227L400 233" fill="none" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round"><animate attributeName="stroke-dasharray" values="0 100;100 0;0 100" dur="6s" repeatCount="indefinite"/></path>
-</g>
-
-<!-- Moving data streams across the whole composition -->
-<g fill="none" stroke="url(#beam)" stroke-width="2.1">
-  <path d="M360 355C470 355 500 330 610 330S700 355 750 355"><animate attributeName="stroke-dasharray" values="0 700;180 520;0 700" dur="5s" repeatCount="indefinite"/></path>
-  <path d="M390 390C480 390 510 410 590 410S670 390 730 390"><animate attributeName="stroke-dasharray" values="0 700;140 560;0 700" dur="6s" repeatCount="indefinite"/></path>
-  <path d="M950 80C1010 80 1020 65 1070 65S1140 80 1190 80"><animate attributeName="stroke-dasharray" values="0 400;110 290;0 400" dur="4.8s" repeatCount="indefinite"/></path>
+<!-- neural data conduits linking identity, core and analytics -->
+<g fill="none" stroke="#22D3EE" stroke-width="1.4" stroke-opacity=".62">
+ <path d="M388 420H492L548 364H604"/><path d="M1018 267L1070 215H1125"/><path d="M1016 412L1062 456H1125"/>
+ <path d="M458 468H535L580 508H640"/>
 </g>
 <g fill="#A5F3FC" filter="url(#glow)">
-  <circle r="2.8" cy="355"><animate attributeName="cx" values="360;750;360" dur="6s" repeatCount="indefinite"/></circle>
-  <circle r="2.2" cy="390"><animate attributeName="cx" values="390;730;390" dur="7s" repeatCount="indefinite"/></circle>
-  <circle r="2.2" cy="80"><animate attributeName="cx" values="950;1190;950" dur="5s" repeatCount="indefinite"/></circle>
+ <circle cx="604" cy="364" r="4"><animate attributeName="opacity" values=".2;1;.2" dur="1.8s" repeatCount="indefinite"/></circle>
+ <circle cx="1125" cy="215" r="4"><animate attributeName="opacity" values="1;.2;1" dur="2.2s" repeatCount="indefinite"/></circle>
+ <circle cx="1125" cy="456" r="4"><animate attributeName="opacity" values=".2;1;.2" dur="2.5s" repeatCount="indefinite"/></circle>
 </g>
-
-<!-- Scanline and edge framing -->
-<rect x="0" y="0" width="1600" height="520" rx="28" fill="none" stroke="#1E7494" stroke-opacity=".42"/>
-<path d="M28 62V28H62M1538 28H1572V62M28 458V492H62M1538 492H1572V458" fill="none" stroke="#67E8F9" stroke-width="2" stroke-opacity=".6"/>
-<rect x="0" y="0" width="1600" height="2" fill="url(#beam)" opacity=".8"><animate attributeName="y" values="0;518;0" dur="11s" repeatCount="indefinite"/></rect>
-
-<!-- NEXT-GEN LAYER: holographic orbital mechanics, volumetric pulse and signal particles -->
-<g id="quantum-orbit-upgrade" transform="translate(805 258)" fill="none">
-  <circle r="177" stroke="#22D3EE" stroke-opacity=".16" stroke-width="1" stroke-dasharray="1 13">
-    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="120s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="151" stroke="#38BDF8" stroke-opacity=".28" stroke-width="1.4" stroke-dasharray="36 7 3 7">
-    <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="29s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="94" stroke="#A5F3FC" stroke-opacity=".22" stroke-width="1" stroke-dasharray="1 4">
-    <animate attributeName="r" values="88;98;88" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="stroke-opacity" values=".1;.5;.1" dur="5s" repeatCount="indefinite"/>
-  </circle>
-  <ellipse rx="134" ry="48" stroke="#67E8F9" stroke-opacity=".55" stroke-width="1.1" transform="rotate(62)">
-    <animateTransform attributeName="transform" type="rotate" from="62" to="422" dur="27s" repeatCount="indefinite" additive="sum"/>
-  </ellipse>
-  <ellipse rx="134" ry="48" stroke="#3B82F6" stroke-opacity=".45" stroke-width="1.1" transform="rotate(-35)">
-    <animateTransform attributeName="transform" type="rotate" from="-35" to="325" dur="31s" repeatCount="indefinite" additive="sum"/>
-  </ellipse>
-  <path d="M-166 0H-142M142 0H166M0 -166V-142M0 142V166" stroke="#A5F3FC" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+<!-- holographic analytics dashboard -->
+<g transform="translate(1150 150)">
+ <rect width="380" height="360" rx="20" fill="url(#panel)" stroke="#1C7595" stroke-width="1.4"/>
+ <rect x="1" y="1" width="378" height="358" rx="19" fill="url(#fine)" opacity=".8"/>
+ <g font-family="Inter,Segoe UI,Arial,sans-serif">
+  <text x="22" y="32" fill="#A5F3FC" font-size="10" letter-spacing="2.3">DATA INTELLIGENCE / LIVE HUD</text>
+  <circle cx="350" cy="27" r="4" fill="#67E8F9" filter="url(#glow)"><animate attributeName="opacity" values=".2;1;.2" dur="1.4s" repeatCount="indefinite"/></circle>
+  <text x="22" y="67" fill="#6E9AB8" font-size="9" letter-spacing="1.7">PATTERN RECOGNITION</text>
+ </g>
+ <g stroke="#19415E" stroke-width="1"><path d="M22 112H358M22 153H358M22 194H358M22 235H358M22 276H358"/><path d="M62 92V290M102 92V290M142 92V290M182 92V290M222 92V290M262 92V290M302 92V290M342 92V290"/></g>
+ <path d="M22 243L54 220L84 232L117 181L148 194L180 150L213 164L244 123L277 144L310 102L358 116L358 290H22Z" fill="#0891B2" opacity=".14"/>
+ <path d="M22 243L54 220L84 232L117 181L148 194L180 150L213 164L244 123L277 144L310 102L358 116" fill="none" stroke="#67E8F9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="510" stroke-dashoffset="510" filter="url(#glow)"><animate attributeName="stroke-dashoffset" from="510" to="0" dur="4.2s" repeatCount="indefinite"/></path>
+ <circle cx="244" cy="123" r="5" fill="#D9FBFF" filter="url(#glow)"><animate attributeName="r" values="3;7;3" dur="2s" repeatCount="indefinite"/></circle>
+ <g fill="#0E7490" stroke="#38BDF8" stroke-width=".8">
+  <rect x="25" y="312" width="16" height="22" rx="3"><animate attributeName="height" values="22;35;22" dur="2.5s" repeatCount="indefinite"/><animate attributeName="y" values="312;299;312" dur="2.5s" repeatCount="indefinite"/></rect>
+  <rect x="51" y="303" width="16" height="31" rx="3"><animate attributeName="height" values="31;18;31" dur="3s" repeatCount="indefinite"/><animate attributeName="y" values="303;316;303" dur="3s" repeatCount="indefinite"/></rect>
+  <rect x="77" y="292" width="16" height="42" rx="3"/><rect x="103" y="284" width="16" height="50" rx="3"><animate attributeName="height" values="50;34;50" dur="3.5s" repeatCount="indefinite"/><animate attributeName="y" values="284;300;284" dur="3.5s" repeatCount="indefinite"/></rect>
+ </g>
+ <text x="145" y="316" fill="#83ABC4" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="9" letter-spacing="1.2">SIGNAL ANALYSIS</text>
+ <path d="M145 330H354" stroke="#164E63"/>
+ <text x="145" y="346" fill="#67E8F9" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="9" letter-spacing="1.1">INSIGHT / PATTERN / ACTION</text>
 </g>
-
-<!-- Volumetric light pulses sweep through the core -->
-<g transform="translate(805 258)">
-  <circle r="64" fill="none" stroke="#22D3EE" stroke-width="2" opacity=".7">
-    <animate attributeName="r" values="62;138;62" dur="6.8s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values=".68;0;.68" dur="6.8s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="66" fill="none" stroke="#60A5FA" stroke-width="1.2" opacity=".55">
-    <animate attributeName="r" values="66;158;66" dur="8.5s" repeatCount="indefinite" begin="-3s"/>
-    <animate attributeName="opacity" values=".55;0;.55" dur="8.5s" repeatCount="indefinite" begin="-3s"/>
-  </circle>
-  <circle r="76" fill="none" stroke="#67E8F9" stroke-width=".8" stroke-dasharray="2 8" opacity=".45">
-    <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="11s" repeatCount="indefinite"/>
-  </circle>
+<!-- travelling streams and scanning beam -->
+<g fill="none" stroke="url(#beam)" stroke-width="2.4">
+ <path d="M392 530C490 530 520 558 610 558S720 530 780 530"><animate attributeName="stroke-dasharray" values="0 500;170 330;0 500" dur="5s" repeatCount="indefinite"/></path>
+ <path d="M1010 92C1060 92 1090 108 1140 108S1230 92 1290 92"><animate attributeName="stroke-dasharray" values="0 400;120 280;0 400" dur="4.8s" repeatCount="indefinite"/></path>
 </g>
-
-<!-- Orbital particles: small comets traveling on elliptical paths -->
-<g transform="translate(805 258)" filter="url(#glow)">
-  <circle r="4" fill="#E0FCFF">
-    <animateMotion dur="7s" repeatCount="indefinite" path="M-132 0 A132 48 0 1 1 132 0 A132 48 0 1 1 -132 0"/>
-    <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="3" fill="#38BDF8">
-    <animateMotion dur="9s" repeatCount="indefinite" begin="-3s" path="M-48 -132 A48 132 0 1 1 48 0 A48 132 0 1 1 -48 -132"/>
-  </circle>
-  <circle r="2.5" fill="#A5F3FC">
-    <animateMotion dur="5.5s" repeatCount="indefinite" begin="-1.4s" path="M-95 92 A132 48 -34 1 1 95 -92 A132 48 -34 1 1 -95 92"/>
-  </circle>
-  <circle r="2.4" fill="#60A5FA">
-    <animateMotion dur="8s" repeatCount="indefinite" begin="-4s" path="M-120 -42 A120 42 0 1 0 120 42 A120 42 0 1 0 -120 -42"/>
-  </circle>
-</g>
-
-<!-- Precision HUD callouts: visual motifs only, not claims of live telemetry -->
-<g font-family="JetBrains Mono,Consolas,monospace" font-size="9" letter-spacing="1.2" fill="#8DDFF4" opacity=".8">
-  <path d="M610 115H666L688 137" fill="none" stroke="#22D3EE" stroke-opacity=".55"/>
-  <circle cx="688" cy="137" r="2.5" fill="#67E8F9"><animate attributeName="r" values="2;4;2" dur="2.4s" repeatCount="indefinite"/></circle>
-  <text x="610" y="104">NEURAL / CORE</text>
-  <path d="M950 418H1012L1034 396" fill="none" stroke="#22D3EE" stroke-opacity=".55"/>
-  <circle cx="1034" cy="396" r="2.5" fill="#67E8F9"><animate attributeName="opacity" values=".25;1;.25" dur="1.8s" repeatCount="indefinite"/></circle>
-  <text x="950" y="434">SIGNAL / FLOW</text>
-  <path d="M122 345H205L230 320" fill="none" stroke="#22D3EE" stroke-opacity=".4"/>
-  <text x="122" y="361">DATA IN / PATTERN OUT</text>
-</g>
-
-<!-- Additional synchronized scan beam -->
-<g opacity=".48">
-  <rect x="1086" y="112" width="438" height="2" fill="url(#beam)">
-    <animate attributeName="y" values="112;388;112" dur="7.5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values=".1;.85;.1" dur="7.5s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="76" y="132" width="255" height="1.5" fill="url(#beam)">
-    <animate attributeName="y" values="132;325;132" dur="9s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;.55;0" dur="9s" repeatCount="indefinite"/>
-  </rect>
-</g>
-
+<g fill="#D9FBFF" filter="url(#glow)"><circle r="3" cy="530"><animate attributeName="cx" values="392;780;392" dur="6s" repeatCount="indefinite"/></circle><circle r="2.5" cy="92"><animate attributeName="cx" values="1010;1290;1010" dur="5.4s" repeatCount="indefinite"/></circle></g>
+<rect x="0" y="0" width="1600" height="2" fill="url(#beam)"><animate attributeName="y" values="0;678;0" dur="12s" repeatCount="indefinite"/></rect>
+<path d="M28 65V28H65M1535 28H1572V65M28 615V652H65M1535 652H1572V615" fill="none" stroke="#67E8F9" stroke-width="2" stroke-opacity=".65"/>
+<rect x=".5" y=".5" width="1599" height="679" rx="28" fill="none" stroke="#1E7494" stroke-opacity=".55"/>
 </svg>
