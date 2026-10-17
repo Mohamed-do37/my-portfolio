@@ -24,6 +24,7 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css?v=2.1">
+    <link rel="stylesheet" href="css/hero-intelligence.css?v=1.0">
 </head>
 
 <body class="dark-theme">
@@ -64,10 +65,12 @@
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero">
+            <canvas id="hero-intelligence-canvas" aria-hidden="true"></canvas>
             <canvas id="particle-canvas"></canvas>
             <div class="container hero-content">
                 <div class="hero-text">
                     <div data-aos="fade-up" data-aos-delay="100">
+                        <div class="hero-intelligence-label"><span class="status-dot"></span><span>AI &amp; DATA INTELLIGENCE</span><span class="label-divider">/</span><span>LIVE SYSTEMS</span></div>
                         <div
                             style="font-size: 1.3rem; color: var(--color-text-secondary); margin-bottom: 5px; font-weight: 500;">
                             Hi, I'm</div>
@@ -427,6 +430,7 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/bg.js?v=2.1"></script>
+    <script src="js/hero-intelligence.js?v=1.0"></script>
     <script src="js/data.js?v=2.1"></script>
     <script src="js/main.js?v=2.1"></script>
     <script src="js/chatbot.js?v=2.1"></script>
