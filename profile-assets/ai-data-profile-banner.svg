@@ -146,4 +146,82 @@
 <rect x="0" y="0" width="1600" height="520" rx="28" fill="none" stroke="#1E7494" stroke-opacity=".42"/>
 <path d="M28 62V28H62M1538 28H1572V62M28 458V492H62M1538 492H1572V458" fill="none" stroke="#67E8F9" stroke-width="2" stroke-opacity=".6"/>
 <rect x="0" y="0" width="1600" height="2" fill="url(#beam)" opacity=".8"><animate attributeName="y" values="0;518;0" dur="11s" repeatCount="indefinite"/></rect>
+
+<!-- NEXT-GEN LAYER: holographic orbital mechanics, volumetric pulse and signal particles -->
+<g id="quantum-orbit-upgrade" transform="translate(805 258)" fill="none">
+  <circle r="177" stroke="#22D3EE" stroke-opacity=".16" stroke-width="1" stroke-dasharray="1 13">
+    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="120s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="151" stroke="#38BDF8" stroke-opacity=".28" stroke-width="1.4" stroke-dasharray="36 7 3 7">
+    <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="29s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="94" stroke="#A5F3FC" stroke-opacity=".22" stroke-width="1" stroke-dasharray="1 4">
+    <animate attributeName="r" values="88;98;88" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values=".1;.5;.1" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <ellipse rx="134" ry="48" stroke="#67E8F9" stroke-opacity=".55" stroke-width="1.1" transform="rotate(62)">
+    <animateTransform attributeName="transform" type="rotate" from="62" to="422" dur="27s" repeatCount="indefinite" additive="sum"/>
+  </ellipse>
+  <ellipse rx="134" ry="48" stroke="#3B82F6" stroke-opacity=".45" stroke-width="1.1" transform="rotate(-35)">
+    <animateTransform attributeName="transform" type="rotate" from="-35" to="325" dur="31s" repeatCount="indefinite" additive="sum"/>
+  </ellipse>
+  <path d="M-166 0H-142M142 0H166M0 -166V-142M0 142V166" stroke="#A5F3FC" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+</g>
+
+<!-- Volumetric light pulses sweep through the core -->
+<g transform="translate(805 258)">
+  <circle r="64" fill="none" stroke="#22D3EE" stroke-width="2" opacity=".7">
+    <animate attributeName="r" values="62;138;62" dur="6.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".68;0;.68" dur="6.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="66" fill="none" stroke="#60A5FA" stroke-width="1.2" opacity=".55">
+    <animate attributeName="r" values="66;158;66" dur="8.5s" repeatCount="indefinite" begin="-3s"/>
+    <animate attributeName="opacity" values=".55;0;.55" dur="8.5s" repeatCount="indefinite" begin="-3s"/>
+  </circle>
+  <circle r="76" fill="none" stroke="#67E8F9" stroke-width=".8" stroke-dasharray="2 8" opacity=".45">
+    <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="11s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+<!-- Orbital particles: small comets traveling on elliptical paths -->
+<g transform="translate(805 258)" filter="url(#glow)">
+  <circle r="4" fill="#E0FCFF">
+    <animateMotion dur="7s" repeatCount="indefinite" path="M-132 0 A132 48 0 1 1 132 0 A132 48 0 1 1 -132 0"/>
+    <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3" fill="#38BDF8">
+    <animateMotion dur="9s" repeatCount="indefinite" begin="-3s" path="M-48 -132 A48 132 0 1 1 48 0 A48 132 0 1 1 -48 -132"/>
+  </circle>
+  <circle r="2.5" fill="#A5F3FC">
+    <animateMotion dur="5.5s" repeatCount="indefinite" begin="-1.4s" path="M-95 92 A132 48 -34 1 1 95 -92 A132 48 -34 1 1 -95 92"/>
+  </circle>
+  <circle r="2.4" fill="#60A5FA">
+    <animateMotion dur="8s" repeatCount="indefinite" begin="-4s" path="M-120 -42 A120 42 0 1 0 120 42 A120 42 0 1 0 -120 -42"/>
+  </circle>
+</g>
+
+<!-- Precision HUD callouts: visual motifs only, not claims of live telemetry -->
+<g font-family="JetBrains Mono,Consolas,monospace" font-size="9" letter-spacing="1.2" fill="#8DDFF4" opacity=".8">
+  <path d="M610 115H666L688 137" fill="none" stroke="#22D3EE" stroke-opacity=".55"/>
+  <circle cx="688" cy="137" r="2.5" fill="#67E8F9"><animate attributeName="r" values="2;4;2" dur="2.4s" repeatCount="indefinite"/></circle>
+  <text x="610" y="104">NEURAL / CORE</text>
+  <path d="M950 418H1012L1034 396" fill="none" stroke="#22D3EE" stroke-opacity=".55"/>
+  <circle cx="1034" cy="396" r="2.5" fill="#67E8F9"><animate attributeName="opacity" values=".25;1;.25" dur="1.8s" repeatCount="indefinite"/></circle>
+  <text x="950" y="434">SIGNAL / FLOW</text>
+  <path d="M122 345H205L230 320" fill="none" stroke="#22D3EE" stroke-opacity=".4"/>
+  <text x="122" y="361">DATA IN / PATTERN OUT</text>
+</g>
+
+<!-- Additional synchronized scan beam -->
+<g opacity=".48">
+  <rect x="1086" y="112" width="438" height="2" fill="url(#beam)">
+    <animate attributeName="y" values="112;388;112" dur="7.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".1;.85;.1" dur="7.5s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="76" y="132" width="255" height="1.5" fill="url(#beam)">
+    <animate attributeName="y" values="132;325;132" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;.55;0" dur="9s" repeatCount="indefinite"/>
+  </rect>
+</g>
+
 </svg>
